@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anuja-Week 8 -Day 1- Part 2 - Homework</title>
+  </head>
+  <body>
+    <div>
+      <h2>Practise what you learned</h2>
+      <ol>
+        <li>
+          <h3>How do you make a Circle in CSS?</h3>
+          <p>
+            To create a circle, use the border-radius property and set the value to 50%. Then combine the height and width properties with a matching value:<br/><br/>
+            .dot {<br/>
+                height: 25px;<br/>
+                width: 25px;<br/>
+                background-color: none;<br/>
+                border:1px solid black;<br/>
+                border-radius: 50%;<br/>
+                display: inline-block;<br/>
+              }
+          </p>
+        </li>
+        <li>
+          <h3>What is Z-index?</h3>
+          <p>
+            Z Index (z-index) is a CSS property that defines the order of overlapping HTML elements. Elements with a higher index will be placed on top of elements with a lower index.<br/><br/>
+            The z-index property specifies the stack order of an element.<br/><br/>
+            An element with greater stack order is always in front of an element with a lower stack order.<br/><br/>
+            Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).<br/><br/>
+            Note: If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top. 
+          </p>
+        </li>
+        <li>
+          <h3>What is a Vendor Prefix and What is it's Purpose?</h3>
+          <p>
+            CSS Vendor prefixes are a way for browsers to give access to new CSS
+            features which are not considered stable. By using prefixes, we can
+            use these newer CSS features with the browsers that support them —
+            instead of waiting for all browsers to catch up.<br>
+            For example, before CSS Transitions were fully supported, you’d have added the prefixes, like so:<br><br>
+            .element {<br>
+                -webkit-transition: all 1s ease-out;<br>
+                -moz-transition: all 1s ease-out;<br>
+                -ms-transition: all 1s ease-out;<br>
+                -o-transition: all 1s ease-out;<br>
+                transition: all 1s ease-out;<br>
+            }
+          </p>
+        </li>
+        <li>
+          <h3>What is the difference between CSS Grid and Flexbox?</h3>
+          <p>
+             <strong>Grid Layout,</strong>  is a two-dimensional grid-based layout system with rows and columns, making it easier to design web pages without having to use floats and positioning. <br>Like tables, grid layout allow us to align elements into columns and rows. To get started you have to define a container element as a grid with <strong>display: grid,</strong> set the column and row sizes with <strong>grid-template-columns</strong> and <strong>grid-template-rows</strong>, and then place its child elements into the grid with <strong>grid-column</strong> and <strong>grid-row.</strong>
+             <br>
+             <br>
+             <strong>Flexbox:</strong> The CSS Flexbox offers a one-dimensional layout. It is helpful in allocating and aligning the space among items in a container (made of grids). It works with all kinds of display devices and screen sizes. To get started you have to define a container element as a grid with <strong>display: flex;</strong>
+          </p>
+        </li>
+        <li>
+          <h3>How might you Speed Up a Slow App?</h3>
+          <p>
+            Internally, React uses several clever techniques to minimize the number of costly DOM operations required to update the UI. While this will lead to a faster user interface without specifically optimizing for performance for many cases, there are ways where you can still speed up your React application. <br />
+            <ol style="list-style-type: lower-alpha;">
+                <li>Using Immutable Data Structures</li>
+                <li>Function/Stateless Components and React.PureComponent</li>
+                <li>Multiple Chunk Files</li>
+                <li>Using Production Mode Flag in Webpack</li>
+                <li>Dependency optimization</li>
+                <li>Use React.Fragments to Avoid Additional HTML Element Wrappers</li>
+                <li>Avoid Inline Function Definition in the Render Function.</li>
+                <li>Throttling and Debouncing Event Action in JavaScript</li>
+                <li>Avoid using Index as Key for map</li>
+                <li>Avoiding Props in Initial States</li>
+                <li>Spreading props on DOM elements</li>
+                <li>Use Reselect in Redux to Avoid Frequent Re-render</li>
+                <li>Avoid Async Initialization in componentWillMount()</li>
+                <li>Memoize React Components</li>
+                <li>CSS Animations Instead of JS Animations</li>
+                <li>Using a CDN</li>
+                <li>Using Web Workers for CPU Extensive Tasks</li>
+                <li>Virtualize Long Lists</li>
+                <li>Analyzing and Optimizing Your Webpack Bundle Bloat</li>
+                <li>Consider Server-side Rendering</li>
+                <li>Enable Gzip Compression on Web Server</li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          <h3>What is CRUD?</h3>
+          <p>
+            CRUD stands for 
+            <ul>
+                <li>CREATE</li>
+                <li>READ</li>
+                <li>UPDATE</li>
+                <li>DELETE</li>
+            </ul><br>
+            It is a mnemonic for the four basic functions of persistent storage. CRUD typically refers to operations performed in a database or datastore, but it can also apply to higher level functions of an application such as soft deletes where data is not actually deleted but marked as deleted via a status.
+          </p>
+        </li>
+        <li>
+            <h3>What is OOP?</h3>
+            <p>OOP stands for Object Oriented Programming.<br><br>
+                Procedural programming is about writing procedures or functions that perform operations on the data, while object-oriented programming is about creating objects that contain both data and functions.<br><br>
+                Object-oriented programming has several advantages over procedural programming:<br><br>
+                OOP is faster and easier to execute<br><br>
+                OOP provides a clear structure for the programs.<br><br>
+                OOP helps to keep the code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug.<br><br>
+                OOP makes it possible to create full reusable applications with less code and shorter development time.<br><br>
+                <strong>Tip: </strong>The "Don't Repeat Yourself" (DRY) principle is about reducing the repetition of code. You should extract out the codes that are common for the application, and place them at a single place and reuse them instead of repeating it.</p>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
